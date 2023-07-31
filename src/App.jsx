@@ -4,12 +4,12 @@ import mqtt from "precompiled-mqtt";
 const App = () => {
   const [liveData, setLiveData] = useState("");
   const option = {
-    username: "reddot_smartlock",
-    password: "reddotsmrtlock@kitenco%2023",
+    username: "user",
+    password: "rpass",
   };
   useEffect(() => {
     // Replace 'mqtt://your-broker-url' with your actual broker URL
-    const brokerUrl = "mqtt://202.134.12.131:15575";
+    const brokerUrl = "mqtt://url:port";
     const client = mqtt.connect(brokerUrl, option);
 
     // Subscribe to the topic you want to receive live data from
